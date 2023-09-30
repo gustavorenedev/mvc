@@ -28,7 +28,7 @@ public class DialogGerarNumero extends JDialog{
         this.setLocationRelativeTo(null);
         this.setTitle("Gerar numero randomico");
         this.setModal(true);
-        this.setLayout(null);
+        getContentPane().setLayout(null);
         this.setResizable(false);
         this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         
@@ -46,9 +46,9 @@ public class DialogGerarNumero extends JDialog{
         this.btGerar.setBounds(70, 90, 150, 25);
         this.btGerarOrdenar.setBounds(70, 125, 150, 25);
         
-        this.add(lbNumeroMaximo);
-        this.add(slNumeroMaximo);
-        this.add(btGerar);
-        this.add(btGerarOrdenar);
+        getContentPane().add(lbNumeroMaximo);
+        getContentPane().add(slNumeroMaximo);
+        getContentPane().add(btGerar);
+        getContentPane().add(btGerarOrdenar);
     }
 }
